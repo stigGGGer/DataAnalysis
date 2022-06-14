@@ -2,6 +2,10 @@ from enum import Enum
 
 from sklearn.cluster import OPTICS
 
+class Affinity(Enum):
+    euclidean = "euclidean"
+    precomputed = "precomputed"
+
 def Optics(table, parametrs):
     #clustering = Affinity_Propagation(n_clusters=parametrs[1], affinity=parametrs[2], linkage=parametrs[0])
     #Y_preds = clustering.fit_predict(table)
