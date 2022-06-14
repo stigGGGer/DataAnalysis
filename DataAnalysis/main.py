@@ -75,7 +75,7 @@ class Calculate(QThread):
 
             ## Чугунов - кластеризация
             #elif self.algorithm == "OPTICS":
-            #    #result = Optics(self.table,self.parametrs)
+            #    #result = Optics(self.table, self.parametrs)
 
             ## Чугунов/Гуляев - классификация
             #elif self.algorithm == "SGDClassifier":
@@ -85,7 +85,7 @@ class Calculate(QThread):
             #elif self.algorithm == "Clustering performance evaluation":
             #    #result = 
 
-
+            #govno generators co. (c) 2022
 
             self.result = result[0]
             self.c = result[1]
