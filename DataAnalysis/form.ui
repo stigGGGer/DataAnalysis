@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>963</width>
-    <height>629</height>
+    <height>988</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -381,8 +381,8 @@ p, li { white-space: pre-wrap; }
        </property>
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>-10</y>
+         <x>0</x>
+         <y>0</y>
          <width>158</width>
          <height>118</height>
         </rect>
@@ -481,6 +481,126 @@ p, li { white-space: pre-wrap; }
          </widget>
         </item>
        </layout>
+      </widget>
+      <widget class="QGroupBox" name="Affinity_Propagation">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>120</y>
+         <width>161</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Affinity_Propagation</string>
+       </property>
+       <widget class="QSpinBox" name="spinBox_3">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>20</y>
+          <width>71</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>random_state</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>preference</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>90</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>damping</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+        <property name="geometry">
+         <rect>
+          <x>81</x>
+          <y>50</y>
+          <width>71</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <double>-500.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>-50.000000000000000</double>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>80</y>
+          <width>71</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="minimum">
+         <double>0.500000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.500000000000000</double>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>affinity</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_11">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>110</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>
