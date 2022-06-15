@@ -519,8 +519,13 @@ class Canvas(QMainWindow):
            parametrs.append(self.ui.spinBox_5.value())
            parametrs.append(self.ui.comboBox_12.currentText())
            parametrs.append(self.ui.spinBox_6.value())
-        
-
+       elif self.thread.algorithm == "SGDClassifier":
+           parametrs.append(self.ui.doubleSpinBox_6.value())
+           parametrs.append(self.ui.spinBox_7.value())
+           parametrs.append(self.ui.doubleSpinBox_7.value())
+       elif self.thread.algorithm == "SVM":            
+           parametrs.append(self.ui.doubleSpinBox_8.value())
+           parametrs.append(self.ui.comboBox_13.currentText())
 
        return parametrs 
 
@@ -578,6 +583,10 @@ class Canvas(QMainWindow):
 
         for i in covariance_type:
             self.ui.comboBox_12.addItem(i.name)
+
+        for i in Gamma:
+            self.ui.comboBox_13.addItem(i.name)
+
         # нужно чтобы добавлять элементы во вкладку
         self.ui.tab_2.layout = QVBoxLayout() 
 
