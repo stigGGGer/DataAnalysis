@@ -808,7 +808,7 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </widget>
-      <widget class="QGroupBox" name="mySGDClassifier">
+      <widget class="QGroupBox" name="SGDClassifier">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -917,7 +917,7 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </widget>
-      <widget class="QGroupBox" name="mySVM">
+      <widget class="QGroupBox" name="SVM">
        <property name="geometry">
         <rect>
          <x>10</x>
