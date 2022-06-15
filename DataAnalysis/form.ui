@@ -717,7 +717,7 @@ p, li { white-space: pre-wrap; }
         </property>
        </widget>
       </widget>
-      <widget class="QGroupBox" name="CP_Evaluation">
+      <widget class="QGroupBox" name="K_Means">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -727,7 +727,7 @@ p, li { white-space: pre-wrap; }
         </rect>
        </property>
        <property name="title">
-        <string>Gaussian_Mixture</string>
+        <string>K_Means</string>
        </property>
        <widget class="QLabel" name="label_24">
         <property name="geometry">

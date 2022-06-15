@@ -16,6 +16,8 @@ from sklearn.metrics import confusion_matrix,accuracy_score,precision_score,reca
 from classification.k_nearest_neighbors import *
 from clustering.agglomerative_clustering import *
 from clustering.Affinity_Propagation import *
+from clustering.Optics import *
+from clustering.K_Means import *
 from chart.tools import *
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
@@ -73,17 +75,17 @@ class Calculate(QThread):
             #elif self.algorithm == "Support_Vector_Machines":
             #    #result = 
 
-            ## Чугунов - кластеризация
-            #elif self.algorithm == "OPTICS":
-            #    #result = Optics(self.table, self.parametrs)
+            # Чугунов - кластеризация
+            elif self.algorithm == "OPTICS":
+                result = Optics(self.table, self.parametrs)
 
             ## Чугунов/Гуляев - классификация
             #elif self.algorithm == "SGDClassifier":
             #    #result = 
 
             ## Гуляев - кластеризация
-            #elif self.algorithm == "Clustering performance evaluation":
-            #    #result = 
+            elif self.algorithm == "K_Means":
+                result = K_Means(self.table, self.parametrs)
 
             #govno generators co. (c) 2022
 
@@ -143,6 +145,8 @@ class Canvas(QMainWindow):
         elif type == "Кластеризация":
             self.ui.comboBox_2.addItem('Agglomerative')
             self.ui.comboBox_2.addItem('Affinity_Propagation')
+            self.ui.comboBox_2.addItem('OPTICS')
+            self.ui.comboBox_2.addItem('K_Means')
             #self.ui.comboBox_3.hide()
            # self.ui.label_9.hide()
 
@@ -503,6 +507,15 @@ class Canvas(QMainWindow):
            parametrs.append(self.ui.spinBox_3.value())
            parametrs.append(self.ui.doubleSpinBox_2.value())
            parametrs.append(self.ui.doubleSpinBox_3.value())
+       elif self.thread.algorithm == "OPTICS":
+           parametrs.append(self.ui.spinBox_4.value())
+           parametrs.append(self.ui.doubleSpinBox_4.value())
+           parametrs.append(self.ui.doubleSpinBox_5.value())
+       elif self.thread.algorithm == "K_Means":
+           parametrs.append(self.ui.spinBox_5.value())
+           parametrs.append(self.ui.comboBox_12.currentText())
+           parametrs.append(self.ui.spinBox_6.value())
+        
 
 
        return parametrs 
@@ -559,6 +572,8 @@ class Canvas(QMainWindow):
         for i in Affinity:
             self.ui.comboBox_11.addItem(i.name)
 
+        for i in covariance_type:
+            self.ui.comboBox_12.addItem(i.name)
         # нужно чтобы добавлять элементы во вкладку
         self.ui.tab_2.layout = QVBoxLayout() 
 

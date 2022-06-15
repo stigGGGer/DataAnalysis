@@ -30,7 +30,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="clustering\agglomerative_clustering.py" />
-    <Compile Include="clustering\Gaussian_Mixture.py">
+    <Compile Include="clustering\K_Means.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="main.py" />
