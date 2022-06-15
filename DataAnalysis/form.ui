@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>963</width>
-    <height>1010</height>
+    <height>1025</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -486,7 +486,7 @@ p, li { white-space: pre-wrap; }
        <property name="geometry">
         <rect>
          <x>220</x>
-         <y>10</y>
+         <y>0</y>
          <width>161</width>
          <height>141</height>
         </rect>
@@ -720,8 +720,8 @@ p, li { white-space: pre-wrap; }
       <widget class="QGroupBox" name="K_Means">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>150</y>
+         <x>90</x>
+         <y>10</y>
          <width>161</width>
          <height>121</height>
         </rect>
@@ -803,6 +803,183 @@ p, li { white-space: pre-wrap; }
           <x>80</x>
           <y>80</y>
           <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="mySGDClassifier">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>161</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>SGDClassifier</string>
+       </property>
+       <widget class="QLabel" name="label_27">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>test_size</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_6">
+        <property name="geometry">
+         <rect>
+          <x>71</x>
+          <y>20</y>
+          <width>81</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.010000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_28">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>max_iter</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_29">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>tol</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_7">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>60</y>
+          <width>81</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <number>1000000</number>
+        </property>
+        <property name="value">
+         <number>1000</number>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_7">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>100</y>
+          <width>81</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="decimals">
+         <number>4</number>
+        </property>
+        <property name="maximum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.001000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.001000000000000</double>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="mySVM">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>161</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>Support Vector Maschines</string>
+       </property>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>test_size</string>
+        </property>
+       </widget>
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_8">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>30</y>
+          <width>81</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="maximum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.010000000000000</double>
+        </property>
+        <property name="value">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_31">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>gamma</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox_13">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>70</y>
+          <width>81</width>
           <height>22</height>
          </rect>
         </property>
