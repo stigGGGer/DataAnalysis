@@ -18,6 +18,8 @@ from clustering.agglomerative_clustering import *
 from clustering.Affinity_Propagation import *
 from clustering.Optics import *
 from clustering.K_Means import *
+from classification.mySGDClassifier import *
+from classification.SVM import *
 from chart.tools import *
 from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
@@ -72,16 +74,16 @@ class Calculate(QThread):
                 result = Affinity_Propagation(self.table, self.parametrs)
 
             ## Великов - классификация
-            #elif self.algorithm == "Support_Vector_Machines":
-            #    #result = 
+            elif self.algorithm == "SVM":
+                result = mySVM(self.table,self.target,self.parametrs)
 
             # Чугунов - кластеризация
             elif self.algorithm == "OPTICS":
                 result = Optics(self.table, self.parametrs)
 
             ## Чугунов/Гуляев - классификация
-            #elif self.algorithm == "SGDClassifier":
-            #    #result = 
+            elif self.algorithm == "SGDClassifier":
+                result = mySGDClassifier(self.table,self.target,self.parametrs)
 
             ## Гуляев - кластеризация
             elif self.algorithm == "K_Means":
@@ -140,6 +142,8 @@ class Canvas(QMainWindow):
         type = self.ui.comboBox.currentText()
         if type == "Классификация":
             self.ui.comboBox_2.addItem('Nearest_Neighbors')
+            self.ui.comboBox_2.addItem('SGDClassifier')
+            self.ui.comboBox_2.addItem('SVM')            
            # self.ui.comboBox_3.show()
             #self.ui.label_9.show()
         elif type == "Кластеризация":

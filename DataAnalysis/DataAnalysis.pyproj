@@ -26,6 +26,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="classification\k_nearest_neighbors.py" />
+    <Compile Include="classification\mySGDClassifier.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classification\SVM.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="clustering\Affinity_Propagation.py">
       <SubType>Code</SubType>
     </Compile>

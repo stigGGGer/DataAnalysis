@@ -739,7 +739,7 @@ p, li { white-space: pre-wrap; }
          </rect>
         </property>
         <property name="text">
-         <string>n_components</string>
+         <string>n_clusters</string>
         </property>
        </widget>
        <widget class="QSpinBox" name="spinBox_5">
